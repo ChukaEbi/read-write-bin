@@ -1,0 +1,7 @@
+Employee:. Name = Harry Palmer, Salary = 50000
+Employee:. Name = Erik Grantby, Salary = 60000
+Employee:. Name = Jon Snow, Salary = 500000
+Employee:. Name = Tony †Ý, Salary = 345
+Employee:. Name = Eddard Hazy, Salary = 10000
+Employee:. Name = Blaise Matuidi, Salary = 2000
+Employee:. Name = c, Salary = 345

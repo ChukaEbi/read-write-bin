@@ -1,0 +1,121 @@
+\section{func.c File Reference}
+\label{func_8c}\index{func.c@{func.c}}
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$string.h$>$}\par
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$errno.h$>$}\par
+{\tt \#include \char`\"{}etest.h\char`\"{}}\par
+{\tt \#include $<$readline/readline.h$>$}\par
+{\tt \#include $<$readline/history.h$>$}\par
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+void \bf{output\-Employee\-Verbose} (FILE $\ast$stream, \bf{Employee} $\ast$employee)
+\item 
+void \bf{print\-Employee\-Verbose} (\bf{Employee} $\ast$employee)
+\item 
+\bf{Employee} $\ast$ \bf{fillin\-Employee} (\bf{Employee} $\ast$emp, int salary, char $\ast$name)
+\item 
+\bf{Employee} $\ast$ \bf{create\-Employee} (int salary, char $\ast$name)
+\item 
+\bf{Employee2} $\ast$ \bf{fillin\-Employee2} (\bf{Employee2} $\ast$emp, int salary, char $\ast$name)
+\item 
+\bf{Employee2} $\ast$ \bf{create\-Employee2} (int salary, char $\ast$name)
+\item 
+void \bf{output\-Employee2} (FILE $\ast$stream, \bf{Employee2} $\ast$employee)
+\item 
+void \bf{print\-Employee2} (\bf{Employee2} $\ast$employee)
+\item 
+\bf{Employee2} $\ast$ \bf{input\-Employee2} ()
+\end{CompactItemize}
+
+
+\subsection{Function Documentation}
+\index{func.c@{func.c}!createEmployee@{createEmployee}}
+\index{createEmployee@{createEmployee}!func.c@{func.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Employee}$\ast$ create\-Employee (int {\em salary}, char $\ast$ {\em name})}\label{func_8c_eb7cb4c5c4779c2113e3daf270db2345}
+
+
+Allocates an Employee struct and fills in its fields. \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em salary}]Annual salary in dollars \item[{\em name}]Character string holding the name. Gets copied into struct. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to the newly-allocated struct. \end{Desc}
+\index{func.c@{func.c}!createEmployee2@{createEmployee2}}
+\index{createEmployee2@{createEmployee2}!func.c@{func.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Employee2}$\ast$ create\-Employee2 (int {\em salary}, char $\ast$ {\em name})}\label{func_8c_a71e796ab3d70e452c5693e15f7d5f8a}
+
+
+\index{func.c@{func.c}!fillinEmployee@{fillinEmployee}}
+\index{fillinEmployee@{fillinEmployee}!func.c@{func.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Employee}$\ast$ fillin\-Employee (\bf{Employee} $\ast$ {\em emp}, int {\em salary}, char $\ast$ {\em name})}\label{func_8c_cff08fb0ab125ccc30b9aa63cef86f36}
+
+
+Fills in the fields of an Employee structure \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em emp}]Pointer to the struct. MUST ALREADY EXIST! \item[{\em salary}]Annual salary in dollars \item[{\em name}]Character string holding the name. Gets copied into struct. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to the same struct \end{Desc}
+\index{func.c@{func.c}!fillinEmployee2@{fillinEmployee2}}
+\index{fillinEmployee2@{fillinEmployee2}!func.c@{func.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Employee2}$\ast$ fillin\-Employee2 (\bf{Employee2} $\ast$ {\em emp}, int {\em salary}, char $\ast$ {\em name})}\label{func_8c_86cf0d1af979fb191ae4acddeded053e}
+
+
+Fills in the fields of an Employee2 structure \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em emp}]Pointer to the Employee2 struct. \item[{\em salary}]Annual salary in dollars \item[{\em name}]pointer to the C-style string \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Pointer to the same struct \end{Desc}
+\index{func.c@{func.c}!inputEmployee2@{inputEmployee2}}
+\index{inputEmployee2@{inputEmployee2}!func.c@{func.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}\bf{Employee2}$\ast$ input\-Employee2 ()}\label{func_8c_4bbd1151cc7051aa5bf412b4b7a75c85}
+
+
+prompt user for information for an Employee2 struct \begin{Desc}
+\item[Returns:]pointer to the filled in Employee2 struct \end{Desc}
+\index{func.c@{func.c}!outputEmployee2@{outputEmployee2}}
+\index{outputEmployee2@{outputEmployee2}!func.c@{func.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void output\-Employee2 (FILE $\ast$ {\em stream}, \bf{Employee2} $\ast$ {\em employee})}\label{func_8c_b0fbf8b9edeb553d0ae83d43f5540a14}
+
+
+Outputs one Employee2 structure in verbose form, to an open file stream \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stream}]The output stream to write to(must be already open) \item[{\em employee}]Pointer to the Employee2 to print \end{description}
+\end{Desc}
+\index{func.c@{func.c}!outputEmployeeVerbose@{outputEmployeeVerbose}}
+\index{outputEmployeeVerbose@{outputEmployeeVerbose}!func.c@{func.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void output\-Employee\-Verbose (FILE $\ast$ {\em stream}, \bf{Employee} $\ast$ {\em employee})}\label{func_8c_724c7914065fffbb2da47f446b1227ea}
+
+
+Outputs one Employee structure in verbose form, to an open file stream \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em stream}]The output stream to write to (must already be open). \item[{\em employee}]Pointer to the structure to print \end{description}
+\end{Desc}
+\index{func.c@{func.c}!printEmployee2@{printEmployee2}}
+\index{printEmployee2@{printEmployee2}!func.c@{func.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\-Employee2 (\bf{Employee2} $\ast$ {\em employee})}\label{func_8c_fbc71af706444231a039d530cf076272}
+
+
+Prints one Employee2 structure in vrbose form \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em employee}]Pointer to the Employee2 struct to print \end{description}
+\end{Desc}
+\index{func.c@{func.c}!printEmployeeVerbose@{printEmployeeVerbose}}
+\index{printEmployeeVerbose@{printEmployeeVerbose}!func.c@{func.c}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void print\-Employee\-Verbose (\bf{Employee} $\ast$ {\em employee})}\label{func_8c_4d9da5be2623d2f7814ac0345dbe1733}
+
+
+Prints one Employee structure in verbose form \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em employee}]Pointer to the structure to print \end{description}
+\end{Desc}
